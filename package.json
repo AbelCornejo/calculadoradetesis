@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx mocha --recursive ./test",
-    "dev": "node src/servidor"
+    "dev": "node src/servidor",
+    "start": "node src/servidor"
   },
   "keywords": [],
   "author": "",
