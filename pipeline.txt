@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    tools {
+        // Install the Maven version configured as "M3" and add it to the path.
+        nodejs "node"
+    }
+
+    stages {
+        stage('copiando repositorio'){
+            steps{
+                git branch: 'main', credentialsId: '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', url: 'https://github.com/PascualDomingo/Integracion-continua-P1-AYD2'
+            }
+        }
+        stage('install dependencias'){
+            steps{
+                bat 'npm install'
+            }
+        }
+        stage('prueba unitaria'){
+            steps{
+                bat 'npm test'
+            }
+        }
+        stage('build'){
+            steps{
+                bat 'npm install'
+            }
+        }
+    }
+}
