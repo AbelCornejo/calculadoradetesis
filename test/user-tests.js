@@ -26,7 +26,7 @@ describe('prueba unitaria: ', ()=>{
         .post('/registrar')
         .type('form')
         .send({
-            "email":"ayd1@gmail.com",
+            "email":"ayd5@gmail.com",
             "name":"hochi",
             "password": "pas"
         })
@@ -46,7 +46,7 @@ describe('prueba unitaria: ', ()=>{
         .type('form')
         .send({
             "email":"ayd@gmail.com",
-            "username":"AYD2aa",
+            "username":"AYD2analisis",
             "password": "pas"
         })
         .end((err, res)=>{
