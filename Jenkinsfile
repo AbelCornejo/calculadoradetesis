@@ -26,4 +26,4 @@ pipeline {
 }
 
 
-//git branch: 'main', credentialsId: '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',
+//git branch: 'main', credentialsId: 'ghp_kfHUhRBWGRT8DlAX',
