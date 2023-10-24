@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('copiando repositorio'){
             steps{
-                git branch: 'main', credentialsId: 'ghp_uQ7KZjnooNsZOgopCG2Fb', url: 'https://github.com/PascualDomingo/Integracion-continua-P1-AYD2'
+                git branch: 'main', credentialsId: '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', url: 'https://github.com/AbelCornejo/calculadoradetesis.git'
             }
         }
         stage('install dependencias'){
