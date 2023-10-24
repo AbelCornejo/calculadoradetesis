@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('copiando repositorio'){
             steps{
-                git branch: 'main', credentialsId: 'credenciales-git', url: 'repositorio-git'
+                git branch: 'main', credentialsId: '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', url: 'https://github.com/AbelCornejo/calculadoradetesis.git'
             }
         }
         stage('install dependencias'){
